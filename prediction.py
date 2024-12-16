@@ -3,7 +3,6 @@
 import pandas as pd #For creating and manipulating DataFrames and Series
 import curses as cr #Create text-based user interfaces (TUIs) in the terminal
 from kaggle_connect import kaggle_connect as kc #Custom function to fetch the dataset using Kaggle API
-from sklearn.preprocessing import StandardScaler as ss #used for standardizing features in a dataset.
 
 #Wrapper function to run Kaggle connect using curses.
 def run_kaggle():
