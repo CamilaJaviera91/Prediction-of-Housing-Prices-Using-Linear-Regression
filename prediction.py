@@ -52,6 +52,9 @@ def menu(stdscr):
     model = lr()
     model.fit(X_train, y_train)
 
+    #Predict on the test set
+    y_pred = model.predict(X_test)
+
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
