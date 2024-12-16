@@ -45,6 +45,9 @@ def menu(stdscr):
     X = data.drop(columns=['price'])
     y = data['price']
 
+    #Split the dataset into trainig and test sets
+    X_train, X_test,  y_train, y_test = ts(X, y, test_size=0.2, random_state=42)
+
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
