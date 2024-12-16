@@ -55,6 +55,11 @@ def menu(stdscr):
     #Predict on the test set
     y_pred = model.predict(X_test)
 
+    #Evaluate the model
+    rmse = np.sqrt(mse(y_test, y_pred))
+    rmae = mae(y_test, y_pred)
+
+
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
