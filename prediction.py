@@ -14,10 +14,11 @@ data = pd.DataFrame(boston)
 #Change medv to price and black to b
 data['price'] = data['medv']
 data['b'] = data['black']
-data = data.drop(['medv', 'black'], axis=1)
+data = data.drop(['medv', 'black', 'Unnamed: 0'], axis=1)
 
 #Delete unnamed columns
 data = data.drop(columns=[col for col in data.columns if col == ''])
 
 #Show basic information
 print(data.head())
+print(data.describe())
