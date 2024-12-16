@@ -10,5 +10,6 @@ def run_kaggle():
 
 boston = run_kaggle()
 data = pd.DataFrame(boston)
+data['PRICE'] = boston.target #add column with housing prices
 
 print(data)
