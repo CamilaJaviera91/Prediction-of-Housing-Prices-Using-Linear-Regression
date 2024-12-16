@@ -48,6 +48,10 @@ def menu(stdscr):
     #Split the dataset into trainig and test sets
     X_train, X_test,  y_train, y_test = ts(X, y, test_size=0.2, random_state=42)
 
+    #Create and train the linear regression model
+    model = lr()
+    model.fit(X_train, y_train)
+
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
