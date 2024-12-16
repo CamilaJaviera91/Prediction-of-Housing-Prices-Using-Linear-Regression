@@ -57,7 +57,12 @@ def menu(stdscr):
 
     #Evaluate the model
     rmse = np.sqrt(mse(y_test, y_pred))
-    rmae = mae(y_test, y_pred)
+    mae_ = mae(y_test, y_pred)
+
+    #Show mae and mse
+    stdscr.addstr("Mae and Mse\n\n")
+    stdscr.addstr(f"RMSE: {rmse:.2f}\n")
+    stdscr.addstr(f"MAE: {mae_:.2f}\n")
 
 
     # Wait for user input to exit
