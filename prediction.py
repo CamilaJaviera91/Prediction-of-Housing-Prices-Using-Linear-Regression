@@ -60,10 +60,9 @@ def menu(stdscr):
     mae_ = mae(y_test, y_pred)
 
     #Show mae and mse
-    stdscr.addstr("Mae and Mse\n\n")
-    stdscr.addstr(f"RMSE: {rmse:.2f}\n")
-    stdscr.addstr(f"MAE: {mae_:.2f}\n")
-
+    stdscr.addstr("\n\nMae and Mse\n\n")
+    stdscr.addstr(f"Average of the squared differences between the predicted values and the actual values (MSE): {rmse:.2f}\n")
+    stdscr.addstr(f"Average of the absolute differences between the predicted values and the actual values (MAE): {mae_:.2f}\n")
 
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
