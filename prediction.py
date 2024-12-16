@@ -32,7 +32,10 @@ def menu(stdscr):
     columns_to_drop = ['medv', 'black', 'Unnamed: 0']
     data = data.drop(columns=[col for col in columns_to_drop if col in data.columns])
 
-    header = "\n\nBoston Housing Dataset\n\n"
+    stdscr.clear()
+    stdscr.refresh()
+
+    header = "Boston Housing Dataset\n\n"
     stats = data.describe().round(1).to_string()
     
     #display
