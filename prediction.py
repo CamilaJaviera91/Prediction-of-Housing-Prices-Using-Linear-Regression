@@ -39,6 +39,11 @@ def menu(stdscr):
     stdscr.addstr(header)
     stdscr.addstr("Descriptive Statistics:\n")
     stdscr.addstr(stats)
+    stdscr.addstr("\n")
+
+    #Split the data into features (X) and target (y)
+    X = data.drop(columns=['price'])
+    y = data['price']
 
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
