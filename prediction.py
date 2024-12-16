@@ -10,6 +10,14 @@ def run_kaggle():
 
 boston = run_kaggle()
 data = pd.DataFrame(boston)
-data['PRICE'] = boston.target #add column with housing prices
 
-print(data)
+#Change medv to price and black to b
+data['price'] = data['medv']
+data['b'] = data['black']
+data = data.drop(['medv', 'black'], axis=1)
+
+#Delete unnamed columns
+data = data.drop(columns=[col for col in data.columns if col == ''])
+
+#Show basic information
+print(data.head())
