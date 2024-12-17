@@ -63,15 +63,15 @@ def menu(stdscr):
     rmse = np.sqrt(mse(y_test, y_pred))
     mae_ = mae(y_test, y_pred)
 
-    # Show metrics
+    #Show metrics
     stdscr.addstr("\nEvaluation Metrics:\n")
     stdscr.addstr(f"Root Mean Squared Error (RMSE): {rmse:.2f}\n")
     stdscr.addstr(f"Mean Absolute Error (MAE): {mae_:.2f}\n")
     stdscr.addstr("\nPress any key to view the plot...")
     stdscr.refresh()
     stdscr.getch()
-    
-    # Wait for user input to exit
+
+    #Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
     stdscr.getch()
@@ -79,19 +79,13 @@ def menu(stdscr):
     """
     Linear Regression
     """
-    #Scatter plot fot data points
-    plt.scatter(data['price'], data['age'], color='blue', label='Actual Data')
-
-    #Plot the regression line
-    plt.plot(data['price'], model.predict(data['age']), color='red', label='Model Line')
-
-    #Add labels and title fot the plot
-    plt.xlabel("Price")
-    plt.ylabel("Age")
-    plt.title("Linear Regression")
-    plt.legend
-
-    #Display the plot
+    #Scatter plot and regression line
+    plt.scatter(X_test['age'], y_test, color='blue', label='Actual Data')  # Scatter for actual data
+    plt.scatter(X_test['age'], y_pred, color='red', label='Predicted Data')  # Scatter for predicted data
+    plt.xlabel("Age")
+    plt.ylabel("Price")
+    plt.title("Linear Regression: Age vs Price")
+    plt.legend()
     plt.show()
 
 # Run the curses wrapper
