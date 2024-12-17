@@ -79,6 +79,9 @@ def menu(stdscr):
     #Scatter plot fot data points
     plt.scatter(data['price'], data['age'], color='blue', label='Actual Data')
 
+    #Plot the regression line
+    plt.plot(data['price'], model.predict(data['age']), color='red', label='Model Line')
+
 
 # Run the curses wrapper
 if __name__ == "__main__":
