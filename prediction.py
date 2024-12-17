@@ -82,6 +82,11 @@ def menu(stdscr):
     #Plot the regression line
     plt.plot(data['price'], model.predict(data['age']), color='red', label='Model Line')
 
+    #Add labels and title fot the plot
+    plt.xlabel("Price")
+    plt.ylabel("Age")
+    plt.title("Linear Regression")
+    plt.legend
 
 # Run the curses wrapper
 if __name__ == "__main__":
