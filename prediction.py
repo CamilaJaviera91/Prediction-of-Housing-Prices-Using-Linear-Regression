@@ -72,6 +72,13 @@ def menu(stdscr):
     stdscr.refresh()
     stdscr.getch()
 
+    """
+    Linear Regression
+    """
+
+    #Create linear regression model
+    model_lr = lr()
+
 # Run the curses wrapper
 if __name__ == "__main__":
     cr.wrapper(menu)
