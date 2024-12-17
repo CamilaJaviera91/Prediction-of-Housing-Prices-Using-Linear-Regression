@@ -76,8 +76,8 @@ def menu(stdscr):
     """
     Linear Regression
     """
-
-    
+    #Scatter plot fot data points
+    plt.scatter(data['price'], data['age'], color='blue', label='Actual Data')
 
 
 # Run the curses wrapper
