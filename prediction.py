@@ -63,11 +63,14 @@ def menu(stdscr):
     rmse = np.sqrt(mse(y_test, y_pred))
     mae_ = mae(y_test, y_pred)
 
-    #Show mae and mse
-    stdscr.addstr("\n\nMae and Mse\n\n")
-    stdscr.addstr(f"MSE (Mean Square Error) / Average of the squared differences between the predicted values and the actual values: {rmse:.2f}\n")
-    stdscr.addstr(f"MAE (Mean Absolute Error) / Average of the absolute differences between the predicted values and the actual values: {mae_:.2f}\n")
-
+    # Show metrics
+    stdscr.addstr("\nEvaluation Metrics:\n")
+    stdscr.addstr(f"Root Mean Squared Error (RMSE): {rmse:.2f}\n")
+    stdscr.addstr(f"Mean Absolute Error (MAE): {mae_:.2f}\n")
+    stdscr.addstr("\nPress any key to view the plot...")
+    stdscr.refresh()
+    stdscr.getch()
+    
     # Wait for user input to exit
     stdscr.addstr("\n\nPress any key to exit...")
     stdscr.refresh()
