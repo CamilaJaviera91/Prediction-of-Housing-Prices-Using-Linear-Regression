@@ -88,6 +88,9 @@ def menu(stdscr):
     plt.title("Linear Regression")
     plt.legend
 
+    #Display the plot
+    plt.show()
+
 # Run the curses wrapper
 if __name__ == "__main__":
     cr.wrapper(menu)
