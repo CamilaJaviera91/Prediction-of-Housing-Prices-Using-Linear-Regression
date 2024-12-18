@@ -35,3 +35,25 @@ This project provides tools to search for datasets on Kaggle, download and prepr
 ├── prediction.py      # Performs data preprocessing, model training, and visualization.
 └── README.md          # Documentation for the project.
 ```
+
+## Usage
+
+### Step 1: Search and Download a Dataset
+
+Run the following command to search, download a kaggle dataset and prediction script:
+```bash
+python prediction.py
+```
+Follow the interactive prompts:
+
+1. Enter a search term for datasets (e.g., Boston Housing Dataset).
+2. Select a dataset from the list.
+3. Specify a folder to store the downloaded files.
+
+### Step 2: Train and Test a Linear Regression Model
+The script:
+
+4. Displays descriptive statistics of the data.
+5. Splits the data into training and testing sets.
+6. Trains a Linear Regression model and evaluates its performance.
+7. Displays a scatter plot comparing actual and predicted values.
