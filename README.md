@@ -16,5 +16,6 @@ This project provides tools to search for datasets on Kaggle, download and prepr
 
 1. **Python**: Python 3.7 or higher.
 2. **Install Required Libraries**:
+<br>
    ```bash
    pip install pandas numpy matplotlib scikit-learn kaggle
