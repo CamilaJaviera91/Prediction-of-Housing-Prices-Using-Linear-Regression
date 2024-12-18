@@ -44,6 +44,10 @@ Run the following command to search, download a kaggle dataset and prediction sc
 ```bash
 python prediction.py
 ```
+Or
+```bash
+python3 prediction.py
+```
 Follow the interactive prompts:
 
 1. Enter a search term for datasets (e.g., Boston Housing Dataset).
