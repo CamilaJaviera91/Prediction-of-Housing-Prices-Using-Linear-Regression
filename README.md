@@ -65,12 +65,21 @@ The script:
 ## Example Output
 ### Terminal Interface
 **Dataset Selection**
-
+![Boston example 1](./images/1.png)
+![Boston example 2](./images/2.png)
+![Boston example 3](./images/3.png)
+![Boston example 4](./images/4.png)
+![Boston example 5](./images/5.png)
+![Boston example 6](./images/6.png)
+![Boston example 7](./images/7.png)
 <br>
 
 **Model Metrics**
 
+![Boston example 8](./images/8.png)
+
 ### Scatter Plot
+![Boston example 9](./images/9.png)
 
 ## Contributions
 
