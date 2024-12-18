@@ -57,3 +57,17 @@ The script:
 5. Splits the data into training and testing sets.
 6. Trains a Linear Regression model and evaluates its performance.
 7. Displays a scatter plot comparing actual and predicted values.
+
+## Example Output
+### Terminal Interface
+**Dataset Selection**
+
+<br>
+
+**Model Metrics**
+
+### Scatter Plot
+
+## Contributions
+
+Contributions are welcome! Feel free to submit issues or pull requests to enhance the functionality.
