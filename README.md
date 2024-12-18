@@ -17,5 +17,21 @@ This project provides tools to search for datasets on Kaggle, download and prepr
 1. **Python**: Python 3.7 or higher.
 2. **Install Required Libraries**:
 <br>
+   
    ```bash
    pip install pandas numpy matplotlib scikit-learn kaggle
+   ```
+
+## Set Up Kaggle API:
+
+- Go to Kaggle Account.
+- Download the kaggle.json API token.
+- Place it in ~/.kaggle/ (Linux/Mac) or %USERPROFILE%\.kaggle\ (Windows).
+
+## File Structure
+```bash
+.
+├── kaggle_connect.py  # Handles dataset search and download via Kaggle API.
+├── prediction.py      # Performs data preprocessing, model training, and visualization.
+└── README.md          # Documentation for the project.
+```
