@@ -3,3 +3,4 @@ __pycache__/
 flask.py 
 app.py
 flask_app.py
+templates/
